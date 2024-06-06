@@ -14,9 +14,9 @@ class VirtualSessionStoragePDOTest extends \PHPUnit\Framework\TestCase {
     protected $_pathToDB;
 
     public function setUp() : void {
-        if (!extension_loaded('PDO') || !extension_loaded('pdo_sqlite')) {
-            return $this->markTestSkipped('Session test requires PDO and pdo_sqlite');
-        }
+        // if (!extension_loaded('PDO') || !extension_loaded('pdo_sqlite')) {
+        //     return $this->markTestSkipped('Session test requires PDO and pdo_sqlite');
+        // }
 
         $schema = <<<SQL
 CREATE TABLE `sessions` (
