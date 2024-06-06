@@ -22,7 +22,8 @@
     }
   , "autoload": {
         "psr-4": {
-            "Ratchet\\": "src/Ratchet"
+            "Ratchet\\": "tests/helpers/Ratchet/",
+            "Tests\\": "tests/"
         }
     }
   , "require": {

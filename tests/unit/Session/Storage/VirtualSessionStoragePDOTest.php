@@ -41,7 +41,7 @@ SQL;
         $this->_virtualSessionStorage->registerBag(new AttributeBag());
     }
 
-    public function tearDown() {
+    public function tearDown() : void {
         unlink($this->_pathToDB);
     }
 

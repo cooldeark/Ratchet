@@ -11,17 +11,17 @@ use Symfony\Component\HttpFoundation\Session\Storage\Handler\NullSessionHandler;
  */
 class SessionProviderTest extends AbstractMessageComponentTestCase {
     public function setUp() : void {
-        return $this->markTestIncomplete('Test needs to be updated for ini_set issue in PHP 7.2');
+        // return $this->markTestIncomplete('Test needs to be updated for ini_set issue in PHP 7.2');
 
-        if (!class_exists('Symfony\Component\HttpFoundation\Session\Session')) {
-            return $this->markTestSkipped('Dependency of Symfony HttpFoundation failed');
-        }
+        // if (!class_exists('Symfony\Component\HttpFoundation\Session\Session')) {
+        //     return $this->markTestSkipped('Dependency of Symfony HttpFoundation failed');
+        // }
 
         parent::setUp();
         $this->_serv = new SessionProvider($this->_app, new NullSessionHandler);
     }
 
-    public function tearDown() {
+    public function tearDown() : void {
         ini_set('session.serialize_handler', 'php');
     }
 
