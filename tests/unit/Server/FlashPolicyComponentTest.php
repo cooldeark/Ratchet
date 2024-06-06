@@ -9,7 +9,7 @@ class FlashPolicyTest extends \PHPUnit\Framework\TestCase {
 
     protected $_policy;
 
-    public function setUp() {
+    public function setUp() : void {
         $this->_policy = new FlashPolicy();
     }
 

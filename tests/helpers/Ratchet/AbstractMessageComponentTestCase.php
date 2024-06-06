@@ -10,7 +10,7 @@ abstract class AbstractMessageComponentTestCase extends \PHPUnit\Framework\TestC
     abstract public function getDecoratorClassString();
     abstract public function getComponentClassString();
 
-    public function setUp() {
+    public function setUp() : void {
         $this->_app  = $this->getMock($this->getComponentClassString());
         $decorator   = $this->getDecoratorClassString();
         $this->_serv = new $decorator($this->_app);

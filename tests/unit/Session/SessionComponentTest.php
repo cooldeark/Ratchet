@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Session\Storage\Handler\NullSessionHandler;
  * @covers Ratchet\Session\Storage\Proxy\VirtualProxy
  */
 class SessionProviderTest extends AbstractMessageComponentTestCase {
-    public function setUp() {
+    public function setUp() : void {
         return $this->markTestIncomplete('Test needs to be updated for ini_set issue in PHP 7.2');
 
         if (!class_exists('Symfony\Component\HttpFoundation\Session\Session')) {

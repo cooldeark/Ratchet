@@ -8,7 +8,7 @@ class WampConnectionTest extends \PHPUnit\Framework\TestCase {
     protected $conn;
     protected $mock;
 
-    public function setUp() {
+    public function setUp() : void {
         $this->mock = $this->getMock('\\Ratchet\\ConnectionInterface');
         $this->conn = new WampConnection($this->mock);
     }

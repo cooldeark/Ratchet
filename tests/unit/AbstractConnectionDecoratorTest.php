@@ -11,7 +11,7 @@ class AbstractConnectionDecoratorTest extends \PHPUnit\Framework\TestCase {
     protected $l1;
     protected $l2;
 
-    public function setUp() {
+    public function setUp() : void {
         $this->mock = $this->getMock('\Ratchet\ConnectionInterface');
         $this->l1   = new ConnectionDecorator($this->mock);
         $this->l2   = new ConnectionDecorator($this->l1);

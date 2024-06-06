@@ -25,7 +25,7 @@ class IoServerTest extends \PHPUnit\Framework\TestCase {
         $loop->run();
     }
 
-    public function setUp() {
+    public function setUp() : void {
         $this->app = $this->getMock('\\Ratchet\\MessageComponentInterface');
 
         $loop = new StreamSelectLoop;

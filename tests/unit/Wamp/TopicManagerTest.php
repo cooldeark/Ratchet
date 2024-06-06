@@ -17,7 +17,7 @@ class TopicManagerTest extends \PHPUnit\Framework\TestCase {
      */
     private $conn;
 
-    public function setUp() {
+    public function setUp() : void {
         $this->conn = $this->getMock('\Ratchet\ConnectionInterface');
         $this->mock = $this->getMock('\Ratchet\Wamp\WampServerInterface');
         $this->mngr = new TopicManager($this->mock);

@@ -13,7 +13,7 @@ class ServerProtocolTest extends \PHPUnit\Framework\TestCase {
 
     protected $_app;
 
-    public function setUp() {
+    public function setUp() : void {
         $this->_app  = new TestComponent;
         $this->_comp = new ServerProtocol($this->_app);
     }

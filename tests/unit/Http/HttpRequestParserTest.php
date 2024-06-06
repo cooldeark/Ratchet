@@ -7,7 +7,7 @@ namespace Ratchet\Http;
 class HttpRequestParserTest extends \PHPUnit\Framework\TestCase {
     protected $parser;
 
-    public function setUp() {
+    public function setUp() : void {
         $this->parser = new HttpRequestParser;
     }
 
