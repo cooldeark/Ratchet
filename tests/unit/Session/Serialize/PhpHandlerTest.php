@@ -5,7 +5,7 @@ use Ratchet\Session\Serialize\PhpHandler;
 /**
  * @covers Ratchet\Session\Serialize\PhpHandler
  */
-class PhpHandlerTest extends \PHPUnit_Framework_TestCase {
+class PhpHandlerTest extends \PHPUnit\Framework\TestCase {
     protected $_handler;
 
     public function setUp() {

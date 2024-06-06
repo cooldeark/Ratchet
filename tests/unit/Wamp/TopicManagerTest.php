@@ -4,7 +4,7 @@ namespace Ratchet\Wamp;
 /**
  * @covers Ratchet\Wamp\TopicManager
  */
-class TopicManagerTest extends \PHPUnit_Framework_TestCase {
+class TopicManagerTest extends \PHPUnit\Framework\TestCase {
     private $mock;
 
     /**

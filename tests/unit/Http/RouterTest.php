@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Matcher\UrlMatcher;
 /**
  * @covers Ratchet\Http\Router
  */
-class RouterTest extends \PHPUnit_Framework_TestCase {
+class RouterTest extends \PHPUnit\Framework\TestCase {
     protected $_router;
     protected $_matcher;
     protected $_conn;

@@ -8,7 +8,7 @@ use React\Socket\Server;
 /**
  * @covers Ratchet\Server\IoServer
  */
-class IoServerTest extends \PHPUnit_Framework_TestCase {
+class IoServerTest extends \PHPUnit\Framework\TestCase {
     protected $server;
 
     protected $app;

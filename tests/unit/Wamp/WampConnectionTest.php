@@ -4,7 +4,7 @@ namespace Ratchet\Wamp;
 /**
  * @covers Ratchet\Wamp\WampConnection
  */
-class WampConnectionTest extends \PHPUnit_Framework_TestCase {
+class WampConnectionTest extends \PHPUnit\Framework\TestCase {
     protected $conn;
     protected $mock;
 

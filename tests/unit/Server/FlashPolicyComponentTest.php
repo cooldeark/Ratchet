@@ -5,7 +5,7 @@ use Ratchet\Server\FlashPolicy;
 /**
  * @covers Ratchet\Server\FlashPolicy
  */
-class FlashPolicyTest extends \PHPUnit_Framework_TestCase {
+class FlashPolicyTest extends \PHPUnit\Framework\TestCase {
 
     protected $_policy;
 

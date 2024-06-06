@@ -5,7 +5,7 @@ use Ratchet\Server\IpBlackList;
 /**
  * @covers Ratchet\Server\IpBlackList
  */
-class IpBlackListTest extends \PHPUnit_Framework_TestCase {
+class IpBlackListTest extends \PHPUnit\Framework\TestCase {
     protected $blocker;
     protected $mock;
 
